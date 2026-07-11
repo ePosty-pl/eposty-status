@@ -1,31 +1,93 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: ePosty-pl # Your GitHub organization or username, where this repository lives
+repo: eposty-status # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  - name: Strona eposty.pl
+    url: https://eposty.pl
+  - name: Aplikacja (demo)
+    url: https://demo.eposty.pl/login
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
+  cname: status.eposty.pl
   # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  name: Status ePosty
+  introTitle: "**Status ePosty**: bieżący stan dostępności usług ePosty."
+  introMessage: Ta strona pokazuje stan dostępności usług ePosty w czasie rzeczywistym, aktualizowany co 5 minut przez GitHub Actions. W razie awarii pojawi się tu incydent z jej przebiegiem.
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+
+workflowSchedule:
+  uptime: "*/5 * * * *"
+  graphs: "0 0 * * *"
+
+i18n:
+  activeIncidents: Aktywne incydenty
+  allSystemsOperational: Wszystkie systemy działają poprawnie
+  incidentReport: "Raport incydentu #$NUMBER →"
+  activeIncidentSummary: Otwarty $DATE, wpisów $POSTS
+  incidentTitle: Szczegóły incydentu $NUMBER
+  incidentDetails: Szczegóły incydentu
+  incidentFixed: Naprawiony
+  incidentOngoing: Trwający
+  incidentOpenedAt: Otwarty
+  incidentClosedAt: Zamknięty
+  incidentViewOnGitHub: Zobacz i subskrybuj na GitHub
+  incidentCommentSummary: Dodano $DATE przez $AUTHOR
+  incidentBack: ← Wszystkie incydenty
+  pastIncidents: Poprzednie incydenty
+  pastIncidentsResolved: Rozwiązany w $MINUTES minut, wpisów $POSTS
+  liveStatus: Status na żywo
+  overallUptime: "Dostępność ogólna: $UPTIME"
+  overallUptimeTitle: Dostępność ogólna
+  averageResponseTime: "Średni czas odpowiedzi: $TIMEms"
+  averageResponseTimeTitle: Średni czas odpowiedzi
+  sevelDayResponseTime: Czas odpowiedzi z 7 dni
+  responseTimeMs: Czas odpowiedzi (ms)
+  up: Działa
+  down: Niedostępny
+  degraded: Spowolniony
+  ms: ms
+  loading: Ładowanie
+  navGitHub: GitHub
+  footer: Ta strona jest [open source]($REPO), oparta o [Upptime](https://upptime.js.org)
+  rateLimitExceededTitle: Przekroczono limit zapytań
+  rateLimitExceededIntro: Przekroczono liczbę zapytań możliwych do wykonania w ciągu godziny.
+  rateLimitExceededWhatDoesErrorMean: Co oznacza ten błąd?
+  rateLimitExceededErrorMeaning: Ta strona korzysta z GitHub API, aby pobierać dane w czasie rzeczywistym.
+  rateLimitExceededErrorHowCanFix: Jak to naprawić?
+  rateLimitExceededErrorFix: Możesz poczekać godzinę, aż limit dla Twojego adresu IP się odnowi.
+  rateLimitExceededGeneratePAT: Dowiedz się, jak wygenerować Personal Access Token
+  rateLimitExceededHasSet: Masz ustawiony personal access token.
+  rateLimitExceededRemoveToken: Usuń token
+  rateLimitExceededGitHubPAT: GitHub Personal Access Token
+  rateLimitExceededCopyPastePAT: Wklej swój token
+  rateLimitExceededSaveToken: Zapisz token
+  errorTitle: Wystąpił błąd
+  errorIntro: Wystąpił błąd podczas pobierania najnowszego statusu.
+  errorText: Spróbuj ponownie za chwilę.
+  errorHome: Przejdź do strony głównej
+  pastScheduledMaintenance: Zakończone planowane przerwy
+  scheduledMaintenance: Planowana przerwa
+  scheduledMaintenanceSummaryStarted: Rozpoczęta $DATE, trwa $DURATION minut
+  scheduledMaintenanceSummaryStarts: Rozpocznie się $DATE, potrwa $DURATION minut
+  startedAt: Rozpoczęta
+  startsAt: Rozpocznie się
+  duration: Czas trwania
+  durationMin: $DURATION minut
+  incidentCompleted: Zakończona
+  incidentScheduled: Zaplanowana
+  duration24H: 24h
+  duration7D: 7d
+  duration30D: 30d
+  duration1Y: 1r
+  durationAll: cały okres
+  locale: pl-PL
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
