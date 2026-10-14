@@ -11,6 +11,10 @@ sites:
     url: https://qyljsrrmxaumsozysira.supabase.co/auth/v1/health
     headers:
       - "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF5bGpzcnJteGF1bXNvenlzaXJhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMzMzE2NTQsImV4cCI6MjA5ODkwNzY1NH0.rV53bMXIDcC51MvVs-d6j3KaRwgFleHOpI0dirE6DpQ"
+  - name: Zadania automatyczne
+    url: https://demo.eposty.pl/api/jobs/status
+    expectedStatusCodes:
+      - 200
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
