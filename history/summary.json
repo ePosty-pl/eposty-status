@@ -52,5 +52,23 @@
     "timeMonth": 485,
     "timeYear": 494,
     "dailyMinutesDown": {}
+  },
+  {
+    "name": "Zadania automatyczne",
+    "url": "https://demo.eposty.pl/api/jobs/status",
+    "icon": "https://icons.duckduckgo.com/ip3/demo.eposty.pl.ico",
+    "slug": "zadania-automatyczne",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {}
   }
 ]
